@@ -17,6 +17,31 @@ const menus = [
                 icon: 'far fa-list',
                 label: 'Printers list',
                 target: 'printer-list'
+            },
+            {
+                icon: 'far fa-list',
+                label: 'Printers manager',
+                target: 'printer-list'
+            },
+            {
+                icon: 'far fa-list',
+                label: 'Group manager',
+                target: 'printer-list'
+            },
+            {
+                icon: 'far fa-list',
+                label: 'Connect Box',
+                target: 'printer-list'
+            },
+            {
+                icon: 'far fa-list',
+                label: 'Tenant',
+                target: 'printer-list'
+            },
+            {
+                icon: 'far fa-list',
+                label: 'Add',
+                target: 'printer-list'
             }
         ]
     },
