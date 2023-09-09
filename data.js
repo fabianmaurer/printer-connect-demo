@@ -10,7 +10,8 @@ const menus = [
             {
                 icon: 'far fa-infinity',
                 label: 'Dashboard',
-                target: 'dashboard'
+                target: 'dashboard',
+                active: true
             },
             {
                 icon: 'far fa-list',

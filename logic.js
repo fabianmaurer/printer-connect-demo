@@ -13,6 +13,9 @@ function initMenus() {
         }
         for(const entry of menu.entries) {
             const _entry = document.createElement('li')
+            if(entry.active) {
+                _entry.classList.add('active')
+            }
             
             const _entryInner = document.createElement('a')
             _entry.innerHTML = '<i class="' + entry.icon + '"></i>'
@@ -30,7 +33,7 @@ function initMenus() {
 }
 
 function transitionPage() {
-    
+
 }
 
 init()
