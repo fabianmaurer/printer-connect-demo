@@ -38,6 +38,10 @@
     --sidebar-width: 64px;
 
     --hover-scale-factor: 1.02;
+
+    --gap-default: 24px;
+
+    --tile-aspect-ratio: 1.15;
 }
 
 body {
@@ -224,8 +228,8 @@ body {
     display: flex;
     width: 100%;
     justify-content: stretch;
-    gap: 24px;
-    margin-bottom: 24px;
+    gap: var(--gap-default);
+    margin-bottom: var(--gap-default);
     > * {
         flex: 1 1 0;
     }
@@ -236,7 +240,7 @@ body {
     background-color: var(--bg);
     display: flex;
     color: var(--text-alt-light);
-    aspect-ratio: 1.1;
+    aspect-ratio: var(--tile-aspect-ratio);
     border-radius: 24px;
     box-shadow: 0 1px 6px var(--gray-dark);
     cursor: pointer;
@@ -263,7 +267,7 @@ body {
     }
     .icon {
         color: var(--text-alt);
-        font-size: var(--font-size-large);
+        font-size: 2vw;
         flex: 0.2 0 30px;
         display: flex;
         flex-direction: column;
@@ -315,13 +319,13 @@ body {
     border-radius: 4px;
     box-shadow: 0 1px 1px #28282880;
     .title {
-        padding: 24px 18px;
+        padding: var(--gap-default);
         border-bottom: 1px solid var(--black-opacity-12);
     }
     .body {
-        padding: 18px;
+        padding: var(--gap-default);
         display: flex;
-        gap: 18px;
+        gap: var(--gap-default);
     }
     .action {
         flex: 1 1 0;
@@ -329,7 +333,7 @@ body {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        aspect-ratio: 1;
+        aspect-ratio: var(--tile-aspect-ratio);
         background-color: var(--gray-light);
         border-radius: 4px;
         font-size: var(--font-size-large);
