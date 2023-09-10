@@ -33,6 +33,7 @@
     --font-size-large: 24px;
     --font-size-larger: 20px;
     --font-size-default: 16px;
+    --font-size-smaller: 14px;
     --font-size-small: 12px;
 
     --sidebar-width: 64px;
@@ -347,7 +348,8 @@ body {
             font-size: 72px;
         }
         .small {
-            font-size: var(--font-size-small);
+            color: var(--text-light);
+            font-size: var(--font-size-smaller);
         }
         &:hover {
             scale: var(--hover-scale-factor);
