@@ -18,7 +18,7 @@ function initMenus() {
             }
             
             const _entryInner = document.createElement('a')
-            _entry.innerHTML = '<i class="' + entry.icon + '"></i>'
+            _entryInner.innerHTML = '<i class="' + entry.icon + '"></i>'
             _entryInner.addEventListener('click', () => {
                 transitionPage(entry.target)
             })
