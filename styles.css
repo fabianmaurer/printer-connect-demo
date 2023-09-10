@@ -105,7 +105,7 @@ body {
         & a {
             display: flex;
             cursor: pointer;
-            padding: 12px 10px;
+            padding: 12px 11px 12px 10px;
         }
         & span {
             display: block;
@@ -295,6 +295,9 @@ body {
             font-size: 6vw;
             color: var(--text-alt);
             margin-right: -14px;
+        }
+        &.double .large {
+            font-size: 4vw;
         }
     }
     .notifications {
